@@ -3,155 +3,204 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Maggie Fu — Pan-Asian Liverpool</title>
+  <title>Maggie Fu — Pan-Asian Kitchen · Liverpool</title>
+  <meta name="description" content="Maggie Fu — Liverpool's favourite pan-Asian kitchen on Smithdown Road. Dim sum, ramen, Thai curries & salt-and-pepper classics." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="nav-logo">Maggie <span>Fu</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="btn-nav">Find Us</a></li>
-  </ul>
-  <div class="hamburger"><span></span><span></span><span></span></div>
+<nav class="on-dark">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>Maggie Fu</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Visit</a></li>
+      <li><a href="contact.html" class="btn-book">Book a Table</a></li>
+    </ul>
+    <div class="burger"><span></span><span></span><span></span></div>
+  </div>
 </nav>
 
-<section class="hero">
-  <div class="hero-content">
-    <div class="hero-badge">🏆 Travellers' Choice 2025 · Liverpool</div>
-    <h1>Bold Flavours,<br><span>Asian Soul</span></h1>
-    <p>Liverpool's favourite pan-Asian restaurant. From sizzling salt & pepper dishes to rich Thai curries and handmade dim sum — every bite is a journey.</p>
-    <div class="hero-btns">
-      <a href="menu.html" class="btn-primary">Explore Menu</a>
-      <a href="contact.html" class="btn-outline">Find Us</a>
-    </div>
-  </div>
-</section>
-
-<div class="info-strip">
-  <div class="info-item"><span class="icon">📍</span> 346 Smithdown Road, Liverpool L15</div>
-  <div class="info-item"><span class="icon">🕐</span> Mon–Thu & Sun: 5pm–10pm</div>
-  <div class="info-item"><span class="icon">🕐</span> Fri–Sat: 1pm–10pm</div>
-  <div class="info-item"><span class="icon">📞</span> 0151 733 9300</div>
-</div>
-
-<!-- Featured Dishes -->
-<section>
-  <div class="section-header centered">
-    <span class="section-label">Our Favourites</span>
-    <h2 class="section-title">What People Can't Stop Ordering</h2>
-    <p class="section-sub">A celebration of Asian flavours — made fresh, served fast, loved by everyone.</p>
-  </div>
-  <div class="grid-4">
-    <div class="card">
-      <div class="card-icon">🌶️</div>
-      <h3>Salt & Pepper Chicken</h3>
-      <p>Crispy strips tossed in our signature salt & pepper blend with fresh chilli and spring onion.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🍜</div>
-      <h3>Ramen Noodle Bowls</h3>
-      <p>Rich broths, silky noodles, perfectly soft-boiled eggs. Comfort in a bowl.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🍱</div>
-      <h3>Char Siu BBQ Ribs</h3>
-      <p>Slow-glazed in our Cantonese honey-soy marinade until they fall off the bone.</p>
-    </div>
-    <div class="card">
-      <div class="card-icon">🥟</div>
-      <h3>Siu Mai Dumplings</h3>
-      <p>Hand-folded dim sum parcels, steamed to order. A Maggie Fu classic since day one.</p>
-    </div>
-  </div>
-  <div style="text-align:center; margin-top:2.5rem;">
-    <a href="menu.html" class="btn-primary">View Full Menu</a>
-  </div>
-</section>
-
-<!-- About Snippet -->
-<section style="background: var(--light);">
-  <div class="grid-2">
-    <div class="about-img">🍜</div>
-    <div>
-      <span class="section-label">Our Story</span>
-      <h2 class="section-title">Liverpool's Home of Pan-Asian Cuisine</h2>
-      <p style="color:var(--text-light); margin-bottom:1.5rem;">Maggie Fu was born from a simple idea: bring the bold, vibrant flavours of Asia to the heart of Liverpool. From fragrant Thai curries to classic Cantonese dim sum and Malaysian noodle soups, we blend culinary traditions into something entirely our own.</p>
-      <p style="color:var(--text-light); margin-bottom:2rem;">We believe great food should be accessible, generous, and made with real care. That's why our kitchen stays open, our portions stay hearty, and our welcome stays warm.</p>
-      <div class="values-grid">
-        <div class="value-item"><span class="value-icon">🌿</span><div><h4>Vegan & Veg Options</h4><p>Dedicated vegan menu available every day.</p></div></div>
-        <div class="value-item"><span class="value-icon">⚡</span><div><h4>Fast Service</h4><p>Hot food from kitchen to table in minutes.</p></div></div>
-        <div class="value-item"><span class="value-icon">🎯</span><div><h4>Generous Portions</h4><p>No one leaves Maggie Fu hungry.</p></div></div>
-        <div class="value-item"><span class="value-icon">💰</span><div><h4>Great Value</h4><p>Premium food at honest, everyday prices.</p></div></div>
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow hero-eyebrow">Smithdown Road · Liverpool</span>
+        <h1 class="display">Pan-Asian,<br><span class="italic">plated with soul.</span></h1>
+        <p class="lede">From hand-folded dim sum to fragrant Thai curries and salt-and-pepper classics — bold flavours, generous plates, and a buzzing room you'll want to stay in.</p>
+        <div class="hero-cta">
+          <a href="menu.html" class="btn btn-fill">Explore the Menu <span class="arrow">→</span></a>
+          <a href="contact.html" class="btn btn-line-light">Find Us</a>
+        </div>
+        <div class="hero-meta">
+          <div class="stat"><span class="num">4.4★</span><span class="lbl">1,300+ reviews</span></div>
+          <div class="stat"><span class="num">#141</span><span class="lbl">of 2,017 in Liverpool</span></div>
+          <div class="stat"><span class="num">7</span><span class="lbl">days a week</span></div>
+        </div>
       </div>
-      <div style="margin-top:2rem;"><a href="about.html" class="btn-primary">Our Full Story</a></div>
+      <div class="hero-visual">
+        <div class="plate plate-1"></div>
+        <div class="plate plate-2">🍜</div>
+        <div class="plate-badge"><b>2025</b>Travellers'<br>Choice</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Siu Mai</span><span>Salt &amp; Pepper Chicken</span><span>Tonkotsu Ramen</span><span>Thai Green Curry</span><span>Char Siu Ribs</span><span>Katsu</span><span>Singapore Vermicelli</span>
+    <span>Siu Mai</span><span>Salt &amp; Pepper Chicken</span><span>Tonkotsu Ramen</span><span>Thai Green Curry</span><span>Char Siu Ribs</span><span>Katsu</span><span>Singapore Vermicelli</span>
+  </div>
+</div>
+
+<!-- SPECIALITIES -->
+<section>
+  <div class="wrap">
+    <div class="sec-head fade">
+      <span class="eyebrow">The House Favourites</span>
+      <h2>Dishes people travel<br>across the city for.</h2>
+      <p>A menu without borders — Cantonese, Thai, Japanese and Malaysian, each plate made fresh to order.</p>
+    </div>
+
+    <div class="dish-row fade">
+      <div class="dish-art a">🌶️</div>
+      <div class="dish-info">
+        <span class="num">01 — Wok Classics</span>
+        <h3>Salt &amp; Pepper Chicken</h3>
+        <p>Our most-ordered dish for a reason. Crisp golden strips tossed through our signature five-spice salt blend with fresh chilli, garlic and spring onion.</p>
+        <div class="dish-tags"><span class="tag">Best Seller</span><span class="tag">Wok-Fired</span></div>
+      </div>
+    </div>
+
+    <div class="dish-row rev-order fade">
+      <div class="dish-info">
+        <span class="num">02 — From the Broth Pot</span>
+        <h3>Tonkotsu &amp; Miso Ramen</h3>
+        <p>Slow-simmered broths, silky house noodles, soft-set egg and tender char siu. Deep, restorative comfort in a bowl — the room goes quiet when these land.</p>
+        <div class="dish-tags"><span class="tag">Comfort</span><span class="tag">Veg Option</span></div>
+      </div>
+      <div class="dish-art b">🍜</div>
+    </div>
+
+    <div class="dish-row fade">
+      <div class="dish-art c">🥟</div>
+      <div class="dish-info">
+        <span class="num">03 — Steamed to Order</span>
+        <h3>Siu Mai &amp; Dim Sum</h3>
+        <p>Hand-folded parcels steamed the moment you order — pork &amp; prawn siu mai, gyoza, and vegetable dumplings. The little plates that started it all.</p>
+        <div class="dish-tags"><span class="tag">Handmade</span><span class="tag">Sharing</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:3.5rem;" class="fade">
+      <a href="menu.html" class="btn btn-ink">See the Full Menu <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
 
-<!-- Reviews -->
-<div class="dark-strip">
-  <div class="section-header centered">
-    <span class="section-label" style="color:var(--gold);">What Guests Say</span>
-    <h2 class="section-title">Loved Across Liverpool</h2>
-  </div>
-  <div class="grid-3">
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p>"The salt and pepper chicken is absolutely incredible — the best I've had outside of a Chinese city. Portions are massive, service is lightning fast and the staff couldn't be friendlier."</p>
-      <span class="reviewer">— Sarah M., TripAdvisor</span>
-    </div>
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p>"Fabulous place, fabulous meal. Everything was excellent from the minute we walked in. The ramen was deeply flavourful and the siu mai were the real deal. We'll be back every week."</p>
-      <span class="reviewer">— James T., Google Reviews</span>
-    </div>
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p>"Best value restaurant in Liverpool, hands down. The katsu curry rivals anything I've had in London and the atmosphere is buzzing. Great for dates, groups, family — everyone's catered for."</p>
-      <span class="reviewer">— Priya K., TripAdvisor</span>
+<!-- ABOUT SPLIT -->
+<section style="background:var(--cream);">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-art fade">
+        🥢
+        <div class="stamp"><b>Est.</b><span>Smithdown Road</span></div>
+      </div>
+      <div class="fade">
+        <span class="eyebrow">Our Story</span>
+        <h2 style="font-size:clamp(2rem,4.5vw,3.2rem); margin:1rem 0 1.2rem;">One kitchen, the whole<br>continent on a plate.</h2>
+        <p style="color:var(--muted);">Maggie Fu began with a simple obsession: bring the real, vibrant street-food flavours of Asia to Liverpool — no compromise, no watering down. From Hong Kong dim sum carts to Tokyo ramen counters and Bangkok curry stalls, it's all here under one roof.</p>
+        <ul class="feature-list">
+          <li><span class="fi">🌿</span><div><h4>A proper vegan menu</h4><p>Not an afterthought — a full plant-based menu loved by regulars.</p></div></li>
+          <li><span class="fi">⚡</span><div><h4>Open kitchen, fast service</h4><p>Watch the wok hei happen. Hot food, table to table, in minutes.</p></div></li>
+          <li><span class="fi">💛</span><div><h4>Generous &amp; great value</h4><p>Hearty portions at honest prices. Nobody leaves Maggie Fu hungry.</p></div></li>
+        </ul>
+        <div style="margin-top:2rem;"><a href="about.html" class="btn btn-line">Read Our Story <span class="arrow">→</span></a></div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
-<!-- CTA Banner -->
-<div class="cta-banner">
-  <h2>Ready to Eat? Come Visit Us.</h2>
-  <p>Walk-ins welcome. Open every day. 346 Smithdown Road, Liverpool.</p>
-  <a href="contact.html" class="btn-outline">Get Directions & Hours</a>
-</div>
+<!-- REVIEWS -->
+<section class="dark">
+  <div class="wrap">
+    <div class="sec-head center fade">
+      <span class="eyebrow center">Loved in Liverpool</span>
+      <h2>Don't just take our word.</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"The best salt and pepper chicken I've had outside an actual Chinese city. Massive portions, lightning service, the friendliest staff."</p>
+        <span class="who">Sarah M. — TripAdvisor</span>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Fabulous place, fabulous meal. Everything was excellent from the minute we walked in. We'll be back every week."</p>
+        <span class="who">James T. — Google</span>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Best value restaurant in Liverpool, hands down. The katsu rivals anything in London and the room is properly buzzing."</p>
+        <span class="who">Priya K. — TripAdvisor</span>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- CTA -->
+<section class="cta-block">
+  <div class="wrap fade">
+    <span class="eyebrow center" style="color:var(--ivory);">Come Hungry</span>
+    <h2 class="display">Pull up a chair.</h2>
+    <p>Walk-ins welcome every day · 346 Smithdown Road, Liverpool</p>
+    <a href="contact.html" class="btn btn-line-light">Directions &amp; Opening Hours <span class="arrow">→</span></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="nav-logo" style="font-family:'Cinzel',serif; font-size:1.3rem; font-weight:900; color:white;">Maggie <span style="color:var(--accent)">Fu</span></div>
-      <p>Liverpool's home of pan-Asian cuisine. Bold flavours, generous portions, served with heart on Smithdown Road.</p>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="dot"></span>Maggie Fu</a>
+        <p>Liverpool's home of pan-Asian cooking. Bold flavours, generous plates, served with heart on Smithdown Road.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Visit Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <ul>
+          <li>Mon–Thu · 5–10pm</li>
+          <li>Fri–Sat · 1–10pm</li>
+          <li>Sunday · 5–10pm</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Find Us</h4>
+        <ul>
+          <li>346 Smithdown Road</li>
+          <li>Liverpool L15 5AN</li>
+          <li><a href="tel:+441517339300">0151 733 9300</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Find Us</a></li>
-      </ul>
+    <div class="foot-bottom">
+      <p>© 2025 Maggie Fu Liverpool. All rights reserved.</p>
+      <p class="made">Prototype site · pan-Asian kitchen</p>
     </div>
-    <div>
-      <h4>Opening Hours</h4>
-      <ul>
-        <li><a href="#">Mon–Thu: 5:00pm – 10:00pm</a></li>
-        <li><a href="#">Fri–Sat: 1:00pm – 10:00pm</a></li>
-        <li><a href="#">Sunday: 5:00pm – 10:00pm</a></li>
-        <li><a href="#">📞 0151 733 9300</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 Maggie Fu Liverpool. All rights reserved.</p>
-    <p>346 Smithdown Road, Liverpool L15 5AN · <a href="contact.html">Find Us</a></p>
   </div>
 </footer>
 

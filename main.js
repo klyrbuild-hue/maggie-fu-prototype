@@ -1,50 +1,52 @@
-// Mobile nav toggle
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-if (hamburger && navLinks) {
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navLinks.classList.toggle('open');
-    document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+// Mobile nav
+const burger = document.querySelector('.burger');
+const links = document.querySelector('.nav-links');
+if (burger && links) {
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('open');
+    links.classList.toggle('open');
+    document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
   });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-    document.body.style.overflow = '';
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    burger.classList.remove('open'); links.classList.remove('open'); document.body.style.overflow = '';
   }));
 }
 
-// Scroll nav border
+// Nav: scrolled state + drop the "on-dark" transparency once past hero
 const nav = document.querySelector('nav');
-if (nav) {
-  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+const startsDark = nav && nav.classList.contains('on-dark');
+function onScroll() {
+  if (!nav) return;
+  const past = window.scrollY > 40;
+  nav.classList.toggle('scrolled', past);
+  if (startsDark) nav.classList.toggle('on-dark', !past);
 }
+window.addEventListener('scroll', onScroll);
+onScroll();
 
-// Active nav link
+// Active link
 const page = location.pathname.split('/').pop() || 'index.html';
-document.querySelectorAll('.nav-links a').forEach(a => {
-  const href = a.getAttribute('href');
-  if (href === page || (page === '' && href === 'index.html')) a.classList.add('active');
+document.querySelectorAll('.nav-links a:not(.btn-book)').forEach(a => {
+  if (a.getAttribute('href') === page) a.classList.add('active');
 });
 
-// IntersectionObserver fade-in
+// Reveal on scroll
 const io = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('visible'), i * 80);
+      setTimeout(() => e.target.classList.add('in'), (i % 4) * 90);
       io.unobserve(e.target);
     }
   });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.card, .review-card, .fade-in').forEach(el => io.observe(el));
+}, { threshold: 0.12 });
+document.querySelectorAll('.fade, .val, .rev').forEach(el => io.observe(el));
 
 // Contact form
-const form = document.querySelector('.contact-form form');
+const form = document.querySelector('.form-card form');
 if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
     form.style.display = 'none';
-    document.querySelector('.success-msg').style.display = 'block';
+    document.querySelector('.success').style.display = 'block';
   });
 }

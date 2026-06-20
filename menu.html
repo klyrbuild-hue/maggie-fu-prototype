@@ -3,126 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu — Maggie Fu Liverpool</title>
+  <title>Menu — Maggie Fu · Liverpool</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Maggie <span>Fu</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="menu.html">Menu</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html" class="btn-nav">Find Us</a></li>
-  </ul>
-  <div class="hamburger"><span></span><span></span><span></span></div>
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="dot"></span>Maggie Fu</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Visit</a></li>
+      <li><a href="contact.html" class="btn-book">Book a Table</a></li>
+    </ul>
+    <div class="burger"><span></span><span></span><span></span></div>
+  </div>
 </nav>
 
-<div class="page-hero">
-  <div class="page-hero-content">
-    <span class="section-label" style="color:var(--gold);">Maggie Fu</span>
-    <h1>Our Menu</h1>
-    <p>Pan-Asian flavours made fresh every day. Vegetarian, vegan and gluten-free options available throughout.</p>
+<header class="page-head">
+  <div class="wrap">
+    <span class="eyebrow center">Fresh to Order</span>
+    <h1 class="display">The Menu</h1>
+    <p>Pan-Asian cooking across five courses. <strong style="color:var(--ivory)">V</strong> marks vegetarian &amp; vegan-friendly — a full vegan menu is available on request.</p>
   </div>
-</div>
+</header>
 
 <section>
-  <div class="menu-category fade-in">
-    <h3>🥟 Starters & Dim Sum</h3>
-    <div class="menu-grid">
-      <div class="menu-item"><span class="menu-item-name">Siu Mai Dumplings <span class="menu-item-note">Pork & prawn, steamed</span></span><span class="menu-item-price">£6.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Spring Rolls <span class="menu-item-note">Crispy vegetable (4 pcs)</span></span><span class="menu-item-price">£5.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Sesame Prawn Toast <span class="menu-item-note">4 pieces</span></span><span class="menu-item-price">£6.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Crispy Squid <span class="menu-item-note">Salt & pepper seasoning</span></span><span class="menu-item-price">£7.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Hoisin Duck Pancakes <span class="menu-item-note">3 pancakes with cucumber & spring onion</span></span><span class="menu-item-price">£8.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Gyoza <span class="menu-item-note">Pan-fried pork & ginger, 6 pcs</span></span><span class="menu-item-price">£7.00</span></div>
-    </div>
-  </div>
+  <div class="wrap">
 
-  <div class="menu-category fade-in">
-    <h3>🌶️ Salt & Pepper Specials</h3>
-    <div class="menu-grid">
-      <div class="menu-item"><span class="menu-item-name">Salt & Pepper Chicken</span><span class="menu-item-price">£10.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Salt & Pepper King Prawns</span><span class="menu-item-price">£12.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Salt & Pepper Squid</span><span class="menu-item-price">£11.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Salt & Pepper Tofu <span class="menu-item-note">Vegan</span></span><span class="menu-item-price">£9.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Salt & Pepper Ribs</span><span class="menu-item-price">£12.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Mixed Salt & Pepper Platter</span><span class="menu-item-price">£15.00</span></div>
+    <div class="menu-cat fade">
+      <div class="menu-cat-head"><span class="emoji">🥟</span><h2>Starters &amp; Dim Sum</h2><span class="rule"></span></div>
+      <div class="menu-list">
+        <div class="mi"><span class="mi-name">Siu Mai Dumplings<span class="mi-desc">Pork &amp; prawn, steamed to order</span></span><span class="mi-dots"></span><span class="mi-price">£6.50</span></div>
+        <div class="mi"><span class="mi-name">Vegetable Spring Rolls <span class="v">V</span><span class="mi-desc">Crisp, 4 pieces, sweet chilli</span></span><span class="mi-dots"></span><span class="mi-price">£5.00</span></div>
+        <div class="mi"><span class="mi-name">Sesame Prawn Toast<span class="mi-desc">4 pieces, golden &amp; light</span></span><span class="mi-dots"></span><span class="mi-price">£6.00</span></div>
+        <div class="mi"><span class="mi-name">Crispy Salt &amp; Pepper Squid<span class="mi-desc">Fresh chilli &amp; spring onion</span></span><span class="mi-dots"></span><span class="mi-price">£7.50</span></div>
+        <div class="mi"><span class="mi-name">Hoisin Duck Pancakes<span class="mi-desc">3 pancakes, cucumber &amp; spring onion</span></span><span class="mi-dots"></span><span class="mi-price">£8.00</span></div>
+        <div class="mi"><span class="mi-name">Pork &amp; Ginger Gyoza<span class="mi-desc">Pan-fried, 6 pieces</span></span><span class="mi-dots"></span><span class="mi-price">£7.00</span></div>
+      </div>
     </div>
-  </div>
 
-  <div class="menu-category fade-in">
-    <h3>🍜 Noodles & Rice</h3>
-    <div class="menu-grid">
-      <div class="menu-item"><span class="menu-item-name">Singapore Vermicelli <span class="menu-item-note">Egg noodles, curry spice, prawns</span></span><span class="menu-item-price">£10.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Beef Chow Mein</span><span class="menu-item-price">£10.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">3-Meat Fried Rice <span class="menu-item-note">Chicken, beef & prawn</span></span><span class="menu-item-price">£11.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Egg Fried Rice <span class="menu-item-note">Vegetarian</span></span><span class="menu-item-price">£5.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Ramen — Chicken Tonkotsu</span><span class="menu-item-price">£11.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Ramen — Beef Miso</span><span class="menu-item-price">£12.00</span></div>
+    <div class="menu-cat fade">
+      <div class="menu-cat-head"><span class="emoji">🌶️</span><h2>Salt &amp; Pepper</h2><span class="rule"></span></div>
+      <div class="menu-list">
+        <div class="mi"><span class="mi-name">Salt &amp; Pepper Chicken<span class="mi-desc">Our signature — best seller</span></span><span class="mi-dots"></span><span class="mi-price">£10.50</span></div>
+        <div class="mi"><span class="mi-name">Salt &amp; Pepper King Prawns</span><span class="mi-dots"></span><span class="mi-price">£12.00</span></div>
+        <div class="mi"><span class="mi-name">Salt &amp; Pepper Squid</span><span class="mi-dots"></span><span class="mi-price">£11.00</span></div>
+        <div class="mi"><span class="mi-name">Salt &amp; Pepper Tofu <span class="v">V</span><span class="mi-desc">Crisp, vegan</span></span><span class="mi-dots"></span><span class="mi-price">£9.00</span></div>
+        <div class="mi"><span class="mi-name">Salt &amp; Pepper Ribs</span><span class="mi-dots"></span><span class="mi-price">£12.50</span></div>
+        <div class="mi"><span class="mi-name">Mixed S&amp;P Platter<span class="mi-desc">Chicken, prawn &amp; squid</span></span><span class="mi-dots"></span><span class="mi-price">£15.00</span></div>
+      </div>
     </div>
-  </div>
 
-  <div class="menu-category fade-in">
-    <h3>🍛 Curries & Mains</h3>
-    <div class="menu-grid">
-      <div class="menu-item"><span class="menu-item-name">Thai Green Curry — Chicken <span class="menu-item-note">With jasmine rice</span></span><span class="menu-item-price">£11.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Thai Green Curry — Tofu <span class="menu-item-note">Vegan</span></span><span class="menu-item-price">£10.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Katsu Curry <span class="menu-item-note">Panko chicken, Japanese curry sauce</span></span><span class="menu-item-price">£12.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Sweet & Sour Chicken <span class="menu-item-note">Cantonese style</span></span><span class="menu-item-price">£10.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Honey Sesame Chicken</span><span class="menu-item-price">£11.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Char Siu BBQ Ribs <span class="menu-item-note">Cantonese honey-soy glaze</span></span><span class="menu-item-price">£13.50</span></div>
+    <div class="menu-cat fade">
+      <div class="menu-cat-head"><span class="emoji">🍜</span><h2>Noodles &amp; Rice</h2><span class="rule"></span></div>
+      <div class="menu-list">
+        <div class="mi"><span class="mi-name">Singapore Vermicelli<span class="mi-desc">Curry-spiced, prawns &amp; egg</span></span><span class="mi-dots"></span><span class="mi-price">£10.00</span></div>
+        <div class="mi"><span class="mi-name">Beef Chow Mein</span><span class="mi-dots"></span><span class="mi-price">£10.50</span></div>
+        <div class="mi"><span class="mi-name">Three-Meat Fried Rice<span class="mi-desc">Chicken, beef &amp; prawn</span></span><span class="mi-dots"></span><span class="mi-price">£11.00</span></div>
+        <div class="mi"><span class="mi-name">Egg Fried Rice <span class="v">V</span></span><span class="mi-dots"></span><span class="mi-price">£5.50</span></div>
+        <div class="mi"><span class="mi-name">Chicken Tonkotsu Ramen</span><span class="mi-dots"></span><span class="mi-price">£11.50</span></div>
+        <div class="mi"><span class="mi-name">Beef Miso Ramen</span><span class="mi-dots"></span><span class="mi-price">£12.00</span></div>
+      </div>
     </div>
-  </div>
 
-  <div class="menu-category fade-in">
-    <h3>🌱 Vegan Menu Highlights</h3>
-    <div class="menu-grid">
-      <div class="menu-item"><span class="menu-item-name">Mushroom & Tofu Dumplings</span><span class="menu-item-price">£6.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Stir-Fried Pak Choi <span class="menu-item-note">Garlic & oyster sauce (vegan opt)</span></span><span class="menu-item-price">£6.50</span></div>
-      <div class="menu-item"><span class="menu-item-name">Vegan Katsu Curry <span class="menu-item-note">Crispy tofu</span></span><span class="menu-item-price">£11.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Vegetable Ramen <span class="menu-item-note">Rich miso broth</span></span><span class="menu-item-price">£10.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Edamame <span class="menu-item-note">Sea salt</span></span><span class="menu-item-price">£4.00</span></div>
-      <div class="menu-item"><span class="menu-item-name">Kimchi Fried Rice <span class="menu-item-note">Vegan</span></span><span class="menu-item-price">£9.50</span></div>
+    <div class="menu-cat fade">
+      <div class="menu-cat-head"><span class="emoji">🍛</span><h2>Curries &amp; Mains</h2><span class="rule"></span></div>
+      <div class="menu-list">
+        <div class="mi"><span class="mi-name">Thai Green Curry — Chicken<span class="mi-desc">With jasmine rice</span></span><span class="mi-dots"></span><span class="mi-price">£11.50</span></div>
+        <div class="mi"><span class="mi-name">Thai Green Curry — Tofu <span class="v">V</span></span><span class="mi-dots"></span><span class="mi-price">£10.00</span></div>
+        <div class="mi"><span class="mi-name">Chicken Katsu Curry<span class="mi-desc">Panko crumb, Japanese sauce</span></span><span class="mi-dots"></span><span class="mi-price">£12.00</span></div>
+        <div class="mi"><span class="mi-name">Sweet &amp; Sour Chicken<span class="mi-desc">Cantonese style</span></span><span class="mi-dots"></span><span class="mi-price">£10.50</span></div>
+        <div class="mi"><span class="mi-name">Honey Sesame Chicken</span><span class="mi-dots"></span><span class="mi-price">£11.00</span></div>
+        <div class="mi"><span class="mi-name">Char Siu BBQ Ribs<span class="mi-desc">Honey-soy glaze</span></span><span class="mi-dots"></span><span class="mi-price">£13.50</span></div>
+      </div>
     </div>
+
+    <div class="menu-cat fade">
+      <div class="menu-cat-head"><span class="emoji">🌱</span><h2>The Vegan Table</h2><span class="rule"></span></div>
+      <div class="menu-list">
+        <div class="mi"><span class="mi-name">Mushroom &amp; Tofu Dumplings <span class="v">V</span></span><span class="mi-dots"></span><span class="mi-price">£6.00</span></div>
+        <div class="mi"><span class="mi-name">Garlic Pak Choi <span class="v">V</span></span><span class="mi-dots"></span><span class="mi-price">£6.50</span></div>
+        <div class="mi"><span class="mi-name">Vegan Katsu Curry <span class="v">V</span><span class="mi-desc">Crispy tofu</span></span><span class="mi-dots"></span><span class="mi-price">£11.00</span></div>
+        <div class="mi"><span class="mi-name">Vegetable Miso Ramen <span class="v">V</span></span><span class="mi-dots"></span><span class="mi-price">£10.00</span></div>
+        <div class="mi"><span class="mi-name">Kimchi Fried Rice <span class="v">V</span></span><span class="mi-dots"></span><span class="mi-price">£9.50</span></div>
+        <div class="mi"><span class="mi-name">Edamame <span class="v">V</span><span class="mi-desc">Sea salt</span></span><span class="mi-dots"></span><span class="mi-price">£4.00</span></div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<div class="cta-banner">
-  <h2>Come Try It In Person</h2>
-  <p>Dine in, takeaway, and delivery available. Walk-ins welcome every day.</p>
-  <a href="contact.html" class="btn-outline">Find Us & Opening Hours</a>
-</div>
+<section class="cta-block">
+  <div class="wrap fade">
+    <span class="eyebrow center" style="color:var(--ivory);">Dine In · Takeaway · Delivery</span>
+    <h2 class="display">Hungry yet?</h2>
+    <p>Walk-ins welcome every day at 346 Smithdown Road.</p>
+    <a href="contact.html" class="btn btn-line-light">Find Us &amp; Opening Hours <span class="arrow">→</span></a>
+  </div>
+</section>
 
 <footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="nav-logo" style="font-family:'Cinzel',serif; font-size:1.3rem; font-weight:900; color:white;">Maggie <span style="color:var(--accent)">Fu</span></div>
-      <p>Liverpool's home of pan-Asian cuisine. Bold flavours, generous portions, served with heart on Smithdown Road.</p>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="index.html" class="logo"><span class="dot"></span>Maggie Fu</a>
+        <p>Liverpool's home of pan-Asian cooking. Bold flavours, generous plates, served with heart on Smithdown Road.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Visit Us</a></li></ul></div>
+      <div><h4>Hours</h4><ul><li>Mon–Thu · 5–10pm</li><li>Fri–Sat · 1–10pm</li><li>Sunday · 5–10pm</li></ul></div>
+      <div><h4>Find Us</h4><ul><li>346 Smithdown Road</li><li>Liverpool L15 5AN</li><li><a href="tel:+441517339300">0151 733 9300</a></li></ul></div>
     </div>
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html">Find Us</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Opening Hours</h4>
-      <ul>
-        <li><a href="#">Mon–Thu: 5:00pm – 10:00pm</a></li>
-        <li><a href="#">Fri–Sat: 1:00pm – 10:00pm</a></li>
-        <li><a href="#">Sunday: 5:00pm – 10:00pm</a></li>
-        <li><a href="#">📞 0151 733 9300</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2025 Maggie Fu Liverpool. All rights reserved.</p>
-    <p>346 Smithdown Road, Liverpool L15 5AN · <a href="contact.html">Find Us</a></p>
+    <div class="foot-bottom"><p>© 2025 Maggie Fu Liverpool. All rights reserved.</p><p class="made">Prototype site · pan-Asian kitchen</p></div>
   </div>
 </footer>
 
